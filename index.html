@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Ovo&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body class="overflow-x-hidden scroll-smooth font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
@@ -23,14 +24,41 @@
     <nav class="w-full  fixed px-5  lg:px-8  xl:px-[8%] py-4 flex items-center justify-between z-50">
         <span class="font-bold text-[35px]">Pankaj Kumawat</span>
         <ul
-            class=" dark:bg-darkTheme  dark:text-white font-Ovo hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12  py-3 bg-white shadow-sm  bg-opacity-50  ">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#work">My Work</a></li>
-            <li><a href="#connact"> Contact Me</a></li>
+            class="dark:bg-darkTheme dark:text-white font-Ovo hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+
+            <li class="relative group cursor-pointer">
+                <a href="#home">Home</a>
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+
+            <li class="relative group cursor-pointer">
+                <a href="#about">About Me</a>
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+
+            <li class="relative group cursor-pointer">
+                <a href="#service">Services</a>
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+
+            <li class="relative group cursor-pointer">
+                <a href="#work">My Work</a>
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+
+            <li class="relative group cursor-pointer">
+                <a href="#connact">Contact Me</a>
+                <span
+                    class="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+
         </ul>
-        <div class="flex items-center gap-4">
+
+        <!-- <div class="flex items-center gap-4">
             <button onclick="toggleTheme()">
                 <img src="./assest/moonicon.png" class="w-6 dark:hidden " alt="">
                 <img src="./assest/sunicon.png" class="w-6  hidden dark:block" alt="">
@@ -41,7 +69,31 @@
 
             <button class="block md:hidden ml-3 " onclick="openMenu()"><img src="./assest/menublack.png" class="w-6 "
                     alt=""></button>
+        </div> -->
+
+        <!-- new button  -->
+        <div class="flex items-center gap-4">
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-black font-Ovo rounded-full ml-4 
+                       relative group transition-all duration-300">
+
+                <span class="relative z-10 text-black dark:text-white">Contact</span>
+                <img class="w-3 relative z-10" src="./assest/contacticon.png" alt="">
+
+                <!-- Gradient Border Effect (Only visible on hover) -->
+                <span
+                    class="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] opacity-0 transition-all duration-300 group-hover:opacity-100">
+                </span>
+
+                <!-- Inner Transparent Layer to Maintain Background -->
+                <span class="absolute inset-[2px] bg-white dark:bg-darkTheme rounded-full"></span>
+            </a>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./assest/menublack.png" class="w-6" alt="">
+            </button>
         </div>
+
+
 
 
         <!-- movile menu -->
@@ -63,7 +115,7 @@
     <!-- header------------------ -->
     <div class="w-11/12 flex items-center  max-w-3xl text-center mx-auto h-screen  flex-col  justify-center gap-4 ">
 
-        <img src="./assest/profileimage.jpeg" class="rounded-full w-32" alt="">
+        <!-- <img src="./assest/profileimage.jpeg" class="rounded-full w-32" alt=""> -->
         <h3 class="flex items-center gap-2 font-Ovo text-xl md:text-2xl  mb-3 ">Hi! i am Pankaj</h3>
         <h1 class="text-3xl  sm:text-6xl font-Ovo lg:text-[66px]">Java Full Stack Developer.</h1>
         <p class="max-w-2xl mx-auto font-Ovo "> I am Pankaj Kumawat, a passionate Java Full Stack Developer with a
@@ -122,7 +174,7 @@
                     </li>
                 </ul>
                 <h4 class="my-3 text-gray-700 font-Ovo">Tool i use</h4>
-
+                <!-- 
                 <ul class="flex items-center  gap-3 sm:gap-5  ">
                     <li
                         class="flex items-center justify-center w-12 sm:w-14  aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 ">
@@ -144,7 +196,64 @@
                         class="flex items-center justify-center w-12 sm:w-14  aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 ">
                         <img src="./assest/eclips.png" class="w-5 sm:w-7 " alt="">
                     </li>
+                </ul> -->
+
+
+
+                <!-- new Ul list  -->
+
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                               hover:-translate-y-1 duration-500 relative group">
+                        <img src="./assest/vscodeicon.png" class="w-5 sm:w-7 relative z-10" alt="">
+
+                        <!-- Gradient Border Effect (Only visible on hover) -->
+                        <span
+                            class="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] opacity-0 transition-all duration-300 group-hover:opacity-100">
+                        </span>
+
+                        <!-- Inner Background to Keep Icon Visible -->
+                        <span class="absolute inset-[2px] bg-white dark:bg-darkTheme rounded-lg"></span>
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                               hover:-translate-y-1 duration-500 relative group">
+                        <img src="./assest/git.png" class="w-5 sm:w-7 relative z-10" alt="">
+                        <span
+                            class="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] opacity-0 transition-all duration-300 group-hover:opacity-100">
+                        </span>
+                        <span class="absolute inset-[2px] bg-white dark:bg-darkTheme rounded-lg"></span>
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                               hover:-translate-y-1 duration-500 relative group">
+                        <img src="./assest/github.jpg" class="w-5 sm:w-7 relative z-10" alt="">
+                        <span
+                            class="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] opacity-0 transition-all duration-300 group-hover:opacity-100">
+                        </span>
+                        <span class="absolute inset-[2px] bg-white dark:bg-darkTheme rounded-lg"></span>
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                               hover:-translate-y-1 duration-500 relative group">
+                        <img src="./assest/leetcode.png" class="w-5 sm:w-7 relative z-10" alt="">
+                        <span
+                            class="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] opacity-0 transition-all duration-300 group-hover:opacity-100">
+                        </span>
+                        <span class="absolute inset-[2px] bg-white dark:bg-darkTheme rounded-lg"></span>
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer 
+                               hover:-translate-y-1 duration-500 relative group">
+                        <img src="./assest/eclips.png" class="w-5 sm:w-7 relative z-10" alt="">
+                        <span
+                            class="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-[#52E5E7] to-[#130CB7] opacity-0 transition-all duration-300 group-hover:opacity-100">
+                        </span>
+                        <span class="absolute inset-[2px] bg-white dark:bg-darkTheme rounded-lg"></span>
+                    </li>
                 </ul>
+
+
             </div>
         </div>
     </div>
@@ -216,74 +325,227 @@
             creating scalable, user-centric solutions.</p>
 
 
-        <div class="grid grid-cols-auto my-10  gap-5 ">
+
+
+
+        <!-- <div class="grid grid-cols-auto my-10  gap-5 ">
+        <div
+            class="aspect-square  bg-[url('../assest/weather.png')] bg-no-repeat  bg-cover bg-center rounded-lg  relative cursor-pointer group ]">
             <div
-                class="aspect-square  bg-[url('../assest/weather.png')] bg-no-repeat  bg-cover bg-center rounded-lg  relative cursor-pointer group">
-                <div
-                    class="bg-white w-10/12 rounded-md absolute bottom-5  left-1/2  -translate-x-1/2  py-3 px-5  flex  items-center justify-between duration-500  group-hover:bottom-7 ">
-                    <div>
-                        <h2 class="font-semibold">Weather App.</h2>
-                        <p class="text-sm text-gray-700 ">HTML, CSS, JavaScript</p>
-                    </div>
-                    <div
-                        class="border rounded-full  border-black w-9  aspect-square flex items-center justify-center   shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                        <img src="./assest/sendicon.png" class="w-5" alt="">
-                    </div>
+                class="bg-white w-10/12 rounded-md absolute bottom-5  left-1/2  -translate-x-1/2  py-3 px-5  flex  items-center justify-between duration-500  group-hover:bottom-7 ">
+                <div>
+                    <h2 class="font-semibold">Weather App.</h2>
+                    <p class="text-sm text-gray-700 ">HTML, CSS, JavaScript</p>
                 </div>
-            </div>
-
-            <!-- second card -->
-            <div
-                class="aspect-square  bg-[url('../assest/giftgenerator.png')] bg-no-repeat  bg-cover bg-center rounded-lg  relative cursor-pointer group">
                 <div
-                    class="bg-white w-10/12 rounded-md absolute bottom-5  left-1/2  -translate-x-1/2  py-3 px-5  flex  items-center justify-between duration-500  group-hover:bottom-7 ">
-                    <div>
-                        <h2 class="font-semibold">Random Mems.</h2>
-                        <p class="text-sm text-gray-700 ">React Js,Tailwind CSS</p>
-                    </div>
-                    <div
-                        class="border rounded-full  border-black w-9  aspect-square flex items-center justify-center   shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                        <img src="./assest/sendicon.png" class="w-5" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <!-- thir card -->
-
-            <div
-                class="aspect-square  bg-[url('../assest/weather.png')] bg-no-repeat  bg-cover bg-center rounded-lg  relative cursor-pointer group">
-                <div
-                    class="bg-white w-10/12 rounded-md absolute bottom-5  left-1/2  -translate-x-1/2  py-3 px-5  flex  items-center justify-between duration-500  group-hover:bottom-7 ">
-                    <div>
-                        <h2 class="font-semibold">Stylebord</h2>
-                        <p class="text-sm text-gray-700 ">Java, React, Tailwind, SpringBoot</p>
-                    </div>
-                    <div
-                        class="border rounded-full  border-black w-9  aspect-square flex items-center justify-center   shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                        <img src="./assest/sendicon.png" class="w-5" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <!-- card four contact  -->
-
-            <div
-                class="aspect-square  bg-[url('../assest/weather.png')] bg-no-repeat  bg-cover bg-center rounded-lg  relative cursor-pointer group">
-                <div
-                    class="bg-white w-10/12 rounded-md absolute bottom-5  left-1/2  -translate-x-1/2  py-3 px-5  flex  items-center justify-between duration-500  group-hover:bottom-7 ">
-                    <div>
-                        <h2 class="font-semibold">Contact</h2>
-                        <p class="text-sm text-gray-700 ">Java, Tailwind, SpringBoot,Spring Security</p>
-                    </div>
-                    <div
-                        class="border rounded-full  border-black w-9  aspect-square flex items-center justify-center   shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                        <img src="./assest/sendicon.png" class="w-5" alt="">
-                    </div>
+                    class="border rounded-full  border-black w-9  aspect-square flex items-center justify-center   shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <img src="./assest/sendicon.png" class="w-5" alt="">
                 </div>
             </div>
         </div>
+
+ 
+        <div
+            class="aspect-square  bg-[url('../assest/giftgenerator.png')] bg-no-repeat  bg-cover bg-center rounded-lg  relative cursor-pointer group">
+            <div
+                class="bg-white w-10/12 rounded-md absolute bottom-5  left-1/2  -translate-x-1/2  py-3 px-5  flex  items-center justify-between duration-500  group-hover:bottom-7 ">
+                <div>
+                    <h2 class="font-semibold">Random Mems.</h2>
+                    <p class="text-sm text-gray-700 ">React Js,Tailwind CSS</p>
+                </div>
+                <div
+                    class="border rounded-full  border-black w-9  aspect-square flex items-center justify-center   shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <img src="./assest/sendicon.png" class="w-5" alt="">
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div
+            class="aspect-square  bg-[url('../assest/weather.png')] bg-no-repeat  bg-cover bg-center rounded-lg  relative cursor-pointer group">
+            <div
+                class="bg-white w-10/12 rounded-md absolute bottom-5  left-1/2  -translate-x-1/2  py-3 px-5  flex  items-center justify-between duration-500  group-hover:bottom-7 ">
+                <div>
+                    <h2 class="font-semibold">Stylebord</h2>
+                    <p class="text-sm text-gray-700 ">Java, React, Tailwind, SpringBoot</p>
+                </div>
+                <div
+                    class="border rounded-full  border-black w-9  aspect-square flex items-center justify-center   shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <img src="./assest/sendicon.png" class="w-5" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div
+            class="aspect-square  bg-[url('../assest/weather.png')] bg-no-repeat  bg-cover bg-center rounded-lg  relative cursor-pointer group">
+            <div
+                class="bg-white w-10/12 rounded-md absolute bottom-5  left-1/2  -translate-x-1/2  py-3 px-5  flex  items-center justify-between duration-500  group-hover:bottom-7 ">
+                <div>
+                    <h2 class="font-semibold">Contact</h2>
+                    <p class="text-sm text-gray-700 ">Java, Tailwind, SpringBoot,Spring Security</p>
+                </div>
+                <div
+                    class="border rounded-full  border-black w-9  aspect-square flex items-center justify-center   shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <img src="./assest/sendicon.png" class="w-5" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+        <!-- newdive  -->
+
+        <div class="container flex font-Ovo flex-col">
+
+            <!-- blog app -->
+            <div
+                class="flex gap-6 border rounded-xl m-2 p-4 w-full h-700px  bg-gradient-to-tr from-[#8EC5FC] to-[#E0C3FC]">
+                <!-- content -->
+                <div>
+                    <!-- heading  -->
+                    <h1 class="font-serif text-center text-4xl">Krefer- Blog Application </h1>
+                    <p>Technologies USed : HTML, Tailwind CSS , React Js, Spring Boot, Spring Security, MySQL</p>
+
+                    <ul class="list-disc mx-2">
+                        <li> Developed a scalable RESTful web application using Java 8 and Spring Boot, improving
+                            response time and resource
+                            efficiency, Used database queries with Spring Data JPA and MySQL, reducing data retrieval
+                            time by 30%. </li>
+                        <li>
+                            Implemented advanced category and tag-based filtering, increasing content discoverability
+                            and user engagement by 35%.
+                        </li>
+                        <li>Engineered a content management system enabling users to publish, refine, and manage blog
+                            posts while fostering
+                            engagement through likes and comments. </li>
+                        <li>Secured authentication with JWT,Spring Security, preventing unauthorized access and ensuring
+                            data protection compliance. </li>
+                    </ul>
+
+                    <div class="">
+                        <ul class="flex gap-2 font-bold text-1xl text-red-700">
+
+                            <li><a target="_blank" href="http://kreferapp.s3-website.ap-south-1.amazonaws.com/">Live</a>
+                            </li>
+                            <li><a target="_blank" href="https://github.com/pankajkumawat719/krefer">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- project  image -->
+                <!-- <div class="">
+                    <div class=" p-2  hover:transform transition-all scale-2  border rounded-2xl">
+                        <img class="border rounded-2xl transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 "
+                            src="./assest/profileimage.jpeg" alt="">
+                    </div>
+                </div> -->
+
+            </div>
+
+
+            <!-- second  -->
+
+
+
+            <div
+                class="flex gap-6 border rounded-xl m-2 p-4 w-full h-700px  bg-gradient-to-tr from-[#8EC5FC] to-[#E0C3FC]">
+                <!-- content -->
+                <div>
+                    <!-- heading  -->
+                    <h1 class="font-serif text-center text-4xl">CMS - Contect Management Application </h1>
+                    <p>Technologies USed : HTML, Tailwind CSS , React Js, Spring Boot, Spring Security, MySQL</p>
+
+                    <ul class="list-disc mx-2">
+                        <li> Engineered a contact application using Java, Spring Boot, Hibernate, and MySQL to support
+                            robust backend data </li>
+                        <li>
+                            Utilized Spring Data JPA Repository[ORM] and Thymeleaf to create a dynamic, responsive
+                            frontend with HTML, CSS, and
+                            JavaScript, incorporating Flowbite components and Tailwind CSS for a modern UI with both
+                            dark and light themes
+                        </li>
+                        <li>Integrated Cloudinary for efficient image and file uploads, streamlining media management
+                            within the application. </li>
+                        <li>Implemented Spring Security with extensive authentication and validation features, including
+                            email verification via a link, </li>
+                    </ul>
+
+                    <div class="">
+                        <ul class="flex gap-2 font-bold text-1xl text-red-700">
+
+                            <!-- <li><a target="_blank" href="#">Live</a></li> -->
+                            <li><a target="_blank" href="https://github.com/pankajkumawat719/contact">GitHub</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- project  image -->
+                <!-- <div class="">
+                    <div class=" p-2  hover:transform transition-all scale-2  border rounded-2xl">
+                        <img class="border rounded-2xl transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 "
+                            src="./assest/profileimage.jpeg" alt="">
+                    </div>
+                </div> -->
+
+            </div>
+
+
+            <!-- third  -->
+
+            <div
+                class="flex gap-6 border rounded-xl m-2 p-4 w-full h-700px  bg-gradient-to-tr from-[#8EC5FC] to-[#E0C3FC]">
+                <!-- content -->
+                <div>
+                    <!-- heading  -->
+                    <h1 class="font-serif text-center text-4xl">Memes </h1>
+                    <p>Technologies Used : HTML, Tailwind CSS , JavaScript</p>
+
+                    <ul class="list-disc mx-2">
+                        <li> Developed a dynamic and interactive Memes Generator using React.js, Tailwind CSS, HTML,
+                            CSS, allowing users to
+                            fetch memes via random selection or keyword-based searches for a personalized experience
+                        </li>
+                        <li>
+                            Integrated third-party APIs and optimized API calls using JavaScript and Fetch API to ensure
+                            real-time meme fetching with
+                            minimal latency, enhancing performance and responsiveness.
+
+                        </li>
+                        <li>Designed a fully responsive UI with Tailwind CSS and implemented error handling, ensuring a
+                            seamless experience across
+                            different devices and network conditions.
+                        </li>
+                        <li>Implement a copy-to-clipboard feature, loading indicators, and smooth UI updates using React
+                            Hooks (useState, useEffect)
+                            to enable easy meme sharing and improved user feedback on API requests.
+                        </li>
+                    </ul>
+
+                    <div class="">
+                        <ul class="flex gap-2 font-bold text-1xl text-red-700">
+
+                            <li><a target="_blank" href="https://pankajkumawat719.github.io/Memes/">Live</a></li>
+                            <li><a target="_blank" href="https://github.com/pankajkumawat719/Memes">GitHub</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- project  image -->
+                <!-- <div class="">
+                    <div class=" p-2  hover:transform transition-all scale-2  border rounded-2xl">
+                        <img class="border rounded-2xl transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 "
+                            src="./assest/profileimage.jpeg" alt="">
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+
         <a href="#"
-            class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover::bg-lightHover duration-500">Show
+            class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover::bg-lightHover duration-500 bg-[#360940] text-white">Show
             More <img src="./assest/rightaerrrro.png" class="w-4 " alt=""></a>
     </div>
 
@@ -332,10 +594,10 @@
             <p>© 2024 Pankaj Kumawat. All rights reserved.</p>
             <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
                 <li>
-                    <a href="https://www.linkedin.com/in/pankajkumawat719/">Linkedin</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/pankajkumawat43/">LinkedIn</a>
                 </li>
-                <li><a href="https://github.com/pankajkumawat719">github</a></li>
-                <li><a href="https://x.com/pankajk719">X</a></li>
+                <li><a target="_blank" href="https://github.com/pankajkumawat719">github</a></li>
+                <li><a target="_blank" href="https://x.com/pankajk719">X</a></li>
             </ul>
         </div>
     </div>
