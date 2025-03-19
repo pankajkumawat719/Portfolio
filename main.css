@@ -7,3 +7,92 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* body {
+  background-color: #d00000;
+  background-image: linear-gradient(43deg, #d00000 34%, #03071e 71%);
+} */
+
+/* body {
+  background-color: #f77f00;
+} */
+/* 
+#footer-body {
+  background: linear-gradient(135deg, #0d0d0d, #8b0000);
+  color: #ffffff; 
+} */
+
+body nav {
+  background: linear-gradient(135deg, #0d0d0d, #8b0000);
+  color: #ffffff; /* White text for strong contrast */
+}
+body {
+  background: linear-gradient(135deg, #0d0d0d, #8b0000);
+  color: #ffffff; /* White text for strong contrast */
+}
+#itemList {
+  background: linear-gradient(135deg, #8b0000, #0d0d0d);
+
+  color: #ffffff; /* White text for strong contrast */
+}
+/* 
+#contact {
+  background: linear-gradient(135deg, #0d0d0d, #8b0000);
+  color: #ffffff; 
+} */
+
+button {
+  background: linear-gradient(135deg, #8b0000, #0d0d0d);
+}
+
+#blogapp {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+#cmsapp {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* #memesapp {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+} */
+
+#memesapp,
+#cmsapp {
+  background: #1a1a1a; /* Dark gray background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+#memesapp:hover {
+  background: #222222; /* Slightly lighter background on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.3); /* Red glow effect */
+}
+#cmsapp:hover {
+  background: #222222; /* Slightly lighter background on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.3); /* Red glow effect */
+}
+
+#blogapp {
+  background: #1a1a1a; /* Dark gray background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+#blogapp:hover {
+  background: #222222; /* Slightly lighter background on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.3); /* Red glow effect */
+}
+
+/* Global styling for input fields */

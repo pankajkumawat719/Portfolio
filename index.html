@@ -19,11 +19,11 @@
 <body class="overflow-x-hidden scroll-smooth font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
 
 
-    <div class="fixed top-0 right-0  w-11/12 -z-10 translate-y-[-80%] dark:hidden"><img src="./assest/headerbgcolor.png"
-            class="w-full" alt=""></div>
-    <nav class="w-full  fixed px-5  lg:px-8  xl:px-[8%] py-4 flex items-center justify-between z-50">
+    <div class="fixed top-0 right-0  w-11/12 -z-10 translate-y-[-80%] dark:hidden"><img src="" class="w-full" alt="">
+    </div>
+    <nav class="w-full  fixed px-5   lg:px-8  xl:px-[8%] py-4 flex items-center justify-between z-50  ">
         <span class="font-bold text-[35px]">Pankaj Kumawat</span>
-        <ul
+        <ul id="itemList"
             class="dark:bg-darkTheme dark:text-white font-Ovo hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
 
             <li class="relative group cursor-pointer">
@@ -72,7 +72,7 @@
         </div> -->
 
         <!-- new button  -->
-        <div class="flex items-center gap-4">
+        <div class="flex items-center  gap-4">
             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-black font-Ovo rounded-full ml-4 
                        relative group transition-all duration-300">
 
@@ -147,7 +147,7 @@
                 <img src="./assest/profileimage.jpeg" alt="" class="w-64 sm:w-80  rounded-3xl max-w-none ">
             </div>
             <div class="flex-1 ">
-                <p class="mb-10 max-w-2xl font-Ovo ">I am Pankaj, a passionate Java Full Stack Developer skilled in
+                <p class="mb-10 max-w-2xl font-Ovo  ">I am Pankaj, a passionate Java Full Stack Developer skilled in
                     building scalable and efficient software solutions. Proficient in Java, Spring Framework, React, and
                     RESTful APIs, I excel in delivering innovative projects and collaborating in dynamic team
                     environments.</p>
@@ -401,7 +401,7 @@
         <div class="container flex font-Ovo flex-col">
 
             <!-- blog app -->
-            <div
+            <div id="blogapp"
                 class="flex gap-6 border rounded-xl m-2 p-4 w-full h-700px  bg-gradient-to-tr from-[#8EC5FC] to-[#E0C3FC]">
                 <!-- content -->
                 <div>
@@ -449,7 +449,7 @@
 
 
 
-            <div
+            <div id="cmsapp"
                 class="flex gap-6 border rounded-xl m-2 p-4 w-full h-700px  bg-gradient-to-tr from-[#8EC5FC] to-[#E0C3FC]">
                 <!-- content -->
                 <div>
@@ -494,12 +494,12 @@
 
             <!-- third  -->
 
-            <div
+            <div id="memesapp"
                 class="flex gap-6 border rounded-xl m-2 p-4 w-full h-700px  bg-gradient-to-tr from-[#8EC5FC] to-[#E0C3FC]">
                 <!-- content -->
                 <div>
                     <!-- heading  -->
-                    <h1 class="font-serif text-center text-4xl">Memes </h1>
+                    <h1 class="   font-serif text-center text-4xl">Memes </h1>
                     <p>Technologies Used : HTML, Tailwind CSS , JavaScript</p>
 
                     <ul class="list-disc mx-2">
@@ -550,8 +550,7 @@
     </div>
 
     <!-- contact -->
-    <div id="contact"
-        class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./assest/footerbg.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20  bg-no-repeat bg-[length:90%_auto] bg-center">
         <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
         <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
         <p class="text-center max-w-2xl font-Ovo mx-auto mt-5 mb-12">
@@ -563,14 +562,14 @@
             <input type="hidden" name="access_key" value="dff843b8-dcb1-4415-90af-fadf12d36f79" />
             <div class="grid grid-cols-auto gap-6 my-10 mb-8">
                 <input type="text" placeholder="Enter your Name "
-                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" name="name" id=""
-                    required />
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white text-black"
+                    name="name" id="" required />
                 <input type="email" placeholder="Enter your Email "
-                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" name="email"
-                    id="" required />
+                    class="flex-1 p-3 outline-none border-[0.5px] text-black border-gray-400 rounded-md bg-white"
+                    name="email" id="" required />
             </div>
             <textarea name="message" rows="6" placeholder="Enter Your Message"
-                class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+                class="w-full p-4 outline-none border-[0.5px] text-black  border-gray-400 rounded-md bg-white mb-6"
                 required></textarea>
             <button
                 class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">
@@ -583,7 +582,7 @@
 
     <!-- footer -->
 
-    <div class="mt-20">
+    <div id="footer-body" class="">
         <div class="text-center">
             <img src="" class="w-36 mx-auto mb-2" alt="" />
             <div class="w-max flex items-center gap-2 mx-auto">
